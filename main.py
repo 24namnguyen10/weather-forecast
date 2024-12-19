@@ -27,7 +27,7 @@ def main():
     if st.button("Predict"):
         try:
             prediction = model.predict([features])
-            st.success(f"Predicted Output: {prediction[0]}")
+            st.success(f"Predicted Output(heat_index): {prediction[0]}")
         except Exception as e:
             st.error(f"An error occurred: {str(e)}")
 
